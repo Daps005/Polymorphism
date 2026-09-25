@@ -34,11 +34,46 @@
  }
  // Setters and Getters - Lab Work
 
+
+ public String getSyllabus() {
+  return syllabus;
+ }
+
+ public void setSyllabus(String syllabus) {
+  this.syllabus = syllabus;
+ }
+
+ public String getCoding_language() {
+  return coding_language;
+ }
+
+ public void setCoding_language(String coding_language) {
+  this.coding_language = coding_language;
+ }
+
+ public Instructor getI1() {
+  return i1;
+ }
+
+ public void setI1(Instructor i1) {
+  this.i1 = i1;
+ }
+
+ public Student[] getStudents() {
+  return students;
+ }
+
+ public void setStudents(Student[] students) {
+  this.students = students;
+ }
+
  // Method Overriding : Defining a method with the same method signature from the parent class
  @Override
  public void display_course_information(){
   // Lab Work - use super. ATTRIBUTE_NAME inside a print statement
-  super.display_course_information();
+  System.out.println("Course name: " + super.name
+          + " Course number: " + super.course_number);
+
   System.out.println("Syllabus" + this.syllabus + "Language:" + this.coding_language + "Instrutor:" + this.i1 + "Students" + this.students);
  }
 

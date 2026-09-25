@@ -6,6 +6,11 @@ public class Instructor extends BSU_Member{
         this.status = "Faculty";
     }
 
+    Instructor(String department, String status) {
+        this.department = department;
+        this.status = status;
+    }
+
     // Task: Create a display method that will print the department and status
     @Override
     public void display_Info(){

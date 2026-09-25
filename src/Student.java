@@ -7,6 +7,11 @@ public class Student extends BSU_Member{
         this.enrolled_courses = new Course [6];
         this.status = "Student";
     }
+    Student(double gpa) {
+        this.gpa = gpa;
+        this.enrolled_courses = new Course[6];
+        this.status = "Student";
+    }
     // Lab work: create a getter method for enrolled_courses attribute
     public Course[] get_Enrolled_Courses(){
         return this.enrolled_courses;

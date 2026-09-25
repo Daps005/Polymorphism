@@ -1,5 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+https://github.com/Daps005/Polymorphism
+
 public class Main {
     public static void main(String[] args) {
         Course c1 = new Course();
@@ -25,7 +27,7 @@ public class Main {
         Course soc101 = new Course();
 
         Arturo.enrolled_courses[0] = math141;
-        // Lab work: Populate index 1 to 4 with the other course references
+
 
         BSU_Member []  members = new BSU_Member[10];
         BSU_Member b1, b2;
@@ -35,10 +37,16 @@ public class Main {
 
         members[0] = b1;
         members[1] = b2;
+        members[2] = new Student();
+        members[3] = new Instructor();
+        members[4] = new BSU_Member();
+        members[5] = new Student();
+        members[6] = new Instructor();
+        members[7] = new BSU_Member();
+        members[8] = new Student();
+        members[9] = new Instructor();
 
-        for(int j = 2; j<10; j++){
-            members[j] = new BSU_Member();
-        }
+
         for(int j = 0; j<10; j++){
             members[j].display_Info();
         }
